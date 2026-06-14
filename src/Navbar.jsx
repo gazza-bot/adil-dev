@@ -1,6 +1,8 @@
+import React from "react"
+
 function ProfileLogo(){
     return(
-        <img src="./assets/logo.png" alt="My Profile Logo"/>
+        <div className="bg-amber-200 w-24 h-12"></div>
     )
 }
 
@@ -14,9 +16,9 @@ function NavbarMenu(){
     )
 }
 
-function layoutNavbar(){
+function LayoutNavbar(){
     return(
-        <div className="flex flex-row gap-24">
+        <div className="px-4 py-2 flex justify-between w-full">
         <ProfileLogo></ProfileLogo>
         <NavbarMenu></NavbarMenu>
         </div>
@@ -24,5 +26,5 @@ function layoutNavbar(){
 }
 
 export default function Navbar(){
-    return layoutNavbar()
+    return LayoutNavbar()
 }

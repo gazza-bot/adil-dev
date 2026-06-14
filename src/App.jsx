@@ -1,9 +1,12 @@
-import layoutNavbar from "./Navbar.jsx"
+import React from "react";
+import Navbar from "./Navbar.jsx";
 
 function App() {
-  <>
-  <layoutNavbar></layoutNavbar>
-  </>
+  return (
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
 
-export default App
+export default App;

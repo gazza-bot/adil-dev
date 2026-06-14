@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", "Sans-serif";
+  --font-fancy: "Monsieur La Doulaise"
+}
 .nav_menu {
-  @apply flex justify-between items-center;
+  @apply flex flex-row gap-24;
+}
+
+.li_nav {
+  @apply font-jakarta text-2xl
 }
